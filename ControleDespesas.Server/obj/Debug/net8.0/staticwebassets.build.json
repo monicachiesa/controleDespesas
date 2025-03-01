@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "l0s+c3kgPLuJo2XT6XOAmvBGnxdrK7c5xtI2v1VBb8I=",
+  "Source": "ControleDespesas.Server",
+  "BasePath": "_content/ControleDespesas.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\controledespesas.client.esproj",
+      "Version": 2,
+      "Source": "controledespesas.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

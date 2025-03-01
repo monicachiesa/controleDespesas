@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:5173",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\ControleDespesas.Server\\..\\controledespesas.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
