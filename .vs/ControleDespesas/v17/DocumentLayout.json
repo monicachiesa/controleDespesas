@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9FB3ACB-184D-40D8-9B7B-17A5CA689284}|ControleDespesas.Server\\ControleDespesas.Server.csproj|c:\\users\\monic\\onedrive\\documentos\\projetos\\controledespesas\\controledespesas.server\\services\\tipodespesaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9FB3ACB-184D-40D8-9B7B-17A5CA689284}|ControleDespesas.Server\\ControleDespesas.Server.csproj|solutionrelative:controledespesas.server\\services\\tipodespesaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|c:\\users\\monic\\onedrive\\documentos\\projetos\\controledespesas\\controledespesas.client\\src\\pages\\tipodespesa\\tipodespesa.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|solutionrelative:controledespesas.client\\src\\pages\\tipodespesa\\tipodespesa.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|c:\\users\\monic\\onedrive\\documentos\\projetos\\controledespesas\\controledespesas.client\\src\\pages\\tipodespesa\\tipodespesaedit.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|solutionrelative:controledespesas.client\\src\\pages\\tipodespesa\\tipodespesaedit.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|c:\\users\\monic\\onedrive\\documentos\\projetos\\controledespesas\\controledespesas.client\\src\\actions\\tipodespesa.actions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|solutionrelative:controledespesas.client\\src\\actions\\tipodespesa.actions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|c:\\users\\monic\\onedrive\\documentos\\projetos\\controledespesas\\controledespesas.client\\src\\pages\\tipodespesa\\tipodespesa.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|solutionrelative:controledespesas.client\\src\\pages\\tipodespesa\\tipodespesa.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|c:\\users\\monic\\onedrive\\documentos\\projetos\\controledespesas\\controledespesas.client\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|solutionrelative:controledespesas.client\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|c:\\users\\monic\\onedrive\\documentos\\projetos\\controledespesas\\controledespesas.client\\src\\types\\ifiltermodelprops.t.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|solutionrelative:controledespesas.client\\src\\types\\ifiltermodelprops.t.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|c:\\users\\monic\\onedrive\\documentos\\projetos\\controledespesas\\controledespesas.client\\src\\types\\itipodespesaprops.t.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|solutionrelative:controledespesas.client\\src\\types\\itipodespesaprops.t.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|c:\\users\\monic\\onedrive\\documentos\\projetos\\controledespesas\\controledespesas.client\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{5E5B695B-9BBF-4B9B-89FA-5F55E687A608}|controledespesas.client\\controledespesas.client.esproj|solutionrelative:controledespesas.client\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,75 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TipoDespesaService.cs",
-              "DocumentMoniker": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\ControleDespesas.Server\\Services\\TipoDespesaService.cs",
-              "RelativeDocumentMoniker": "ControleDespesas.Server\\Services\\TipoDespesaService.cs",
-              "ToolTip": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\ControleDespesas.Server\\Services\\TipoDespesaService.cs",
-              "RelativeToolTip": "ControleDespesas.Server\\Services\\TipoDespesaService.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAiwDcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T18:02:58.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IFilterModelProps.t.ts",
-              "DocumentMoniker": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\types\\IFilterModelProps.t.ts",
-              "RelativeDocumentMoniker": "controledespesas.client\\src\\types\\IFilterModelProps.t.ts",
-              "ToolTip": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\types\\IFilterModelProps.t.ts",
-              "RelativeToolTip": "controledespesas.client\\src\\types\\IFilterModelProps.t.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-01T18:00:56.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ITipoDespesaProps.t.ts",
-              "DocumentMoniker": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\types\\ITipoDespesaProps.t.ts",
-              "RelativeDocumentMoniker": "controledespesas.client\\src\\types\\ITipoDespesaProps.t.ts",
-              "ToolTip": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\types\\ITipoDespesaProps.t.ts",
-              "RelativeToolTip": "controledespesas.client\\src\\types\\ITipoDespesaProps.t.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-01T18:00:54.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "tipoDespesa.actions.ts",
               "DocumentMoniker": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\actions\\tipoDespesa.actions.ts",
               "RelativeDocumentMoniker": "controledespesas.client\\src\\actions\\tipoDespesa.actions.ts",
               "ToolTip": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\actions\\tipoDespesa.actions.ts",
               "RelativeToolTip": "controledespesas.client\\src\\actions\\tipoDespesa.actions.ts",
-              "ViewState": "AQIAADoAAAAAAAAAAAD4v0sAAABkAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFAAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-01T17:50:28.515Z",
+              "WhenOpened": "2025-03-01T18:35:35.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "main.tsx",
+              "DocumentMoniker": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\main.tsx",
+              "RelativeDocumentMoniker": "controledespesas.client\\src\\main.tsx",
+              "ToolTip": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\main.tsx",
+              "RelativeToolTip": "controledespesas.client\\src\\main.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-01T18:30:35.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\App.tsx",
+              "RelativeDocumentMoniker": "controledespesas.client\\src\\App.tsx",
+              "ToolTip": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\App.tsx",
+              "RelativeToolTip": "controledespesas.client\\src\\App.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-01T18:30:30.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "tipoDespesaEdit.component.tsx",
+              "DocumentMoniker": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\pages\\TipoDespesa\\tipoDespesaEdit.component.tsx",
+              "RelativeDocumentMoniker": "controledespesas.client\\src\\pages\\TipoDespesa\\tipoDespesaEdit.component.tsx",
+              "ToolTip": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\pages\\TipoDespesa\\tipoDespesaEdit.component.tsx",
+              "RelativeToolTip": "controledespesas.client\\src\\pages\\TipoDespesa\\tipoDespesaEdit.component.tsx",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-01T18:28:52.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "tipoDespesa.component.tsx",
               "DocumentMoniker": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\pages\\TipoDespesa\\tipoDespesa.component.tsx",
               "RelativeDocumentMoniker": "controledespesas.client\\src\\pages\\TipoDespesa\\tipoDespesa.component.tsx",
               "ToolTip": "C:\\Users\\monic\\OneDrive\\Documentos\\Projetos\\ControleDespesas\\controledespesas.client\\src\\pages\\TipoDespesa\\tipoDespesa.component.tsx",
               "RelativeToolTip": "controledespesas.client\\src\\pages\\TipoDespesa\\tipoDespesa.component.tsx",
-              "ViewState": "AQIAABQAAAAAAAAAAAAgwCQAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-01T17:48:54.768Z",
+              "WhenOpened": "2025-03-01T18:26:23.572Z",
               "EditorCaption": ""
             }
           ]

@@ -32,8 +32,8 @@ const TipoDespesaEdit = () => {
             dispatch(addTipoDespesa(payload));
         }
 
-        dispatch(getTodosTiposDespesas());
         navigate("/tiposDespesas")
+        getTodosTiposDespesas({ SearchValue: null });
     };
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

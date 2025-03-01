@@ -1,6 +1,6 @@
 ﻿import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button, Col, Input, Modal, Row, Table } from "reactstrap";
+import { Button, Col, Input, Row, Table } from "reactstrap";
 import { getTodosTiposDespesas, removeTipoDespesa } from "../../actions/tipoDespesa.actions";
 import { useDispatch, useSelector } from "react-redux";
 import { PencilSimple, TrashSimple } from '@phosphor-icons/react';
@@ -31,10 +31,8 @@ const TipoDespesa = () => {
     const tipoDespesa = useSelector(state => state.tipoDespesa.tipoDespesa);
 
     useEffect(() => {
-        if (debouncedValue) {
-            let filterModel = { SearchValue: debouncedValue };
-            dispatch(getTodosTiposDespesas(filterModel));
-        }
+        const filterModel = { SearchValue: debouncedValue };
+        dispatch(getTodosTiposDespesas(filterModel));
     }, [debouncedValue, dispatch]);
 
     const goToDespesa = () => {
@@ -47,7 +45,6 @@ const TipoDespesa = () => {
 
     const handleDeleteTipoDespesa = () => {
         dispatch(removeTipoDespesa(idTipoDespesa));
-        dispatch(getTodosTiposDespesas());
         toggle();
     }
 

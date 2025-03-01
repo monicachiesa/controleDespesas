@@ -1,29 +1,33 @@
-import axios from 'axios';
+ï»¿import axios from 'axios';
 import config from '../config/config';
 import { ITipoDespesaProps } from '../types/ITipoDespesaProps.t';
 import { toQueryString } from '../utils/Functions';
 import { IFilterModelProps } from '../types/IFilterModelProps.t';
+import { toast } from 'react-toastify';
 
 // Action para adicionar tipo de despesa
 export const addTipoDespesa = (payload: ITipoDespesaProps) => {
     return async (dispatch) => {
         try {
-            // Faz a requisição POST para adicionar o tipo de despesa
+            // Faz a requisiÃ§Ã£o POST para adicionar o tipo de despesa
             const response = await axios.post(`${config.BASE_URL}`, payload, {
                 headers: {
-                    'Content-Type': 'application/json', // Especifica o tipo de conteúdo                   
+                    'Content-Type': 'application/json', // Especifica o tipo de conteÃºdo                   
                 }
             });
 
-            dispatch({
-                type: 'ADD_TIPO_DESPESA',
-                payload: response.data // Dados retornados pelo backend
-            });
+            //resposta com status = created
+            if (response.status == 201) {
+                toast.success('Tipo de despesa cadastrado com sucesso!');
+                dispatch({
+                    type: 'ADD_TIPO_DESPESA',
+                    payload: response.data // Dados retornados pelo backend
+                });
+            }
 
-            getTodosTiposDespesas();
         } catch (error) {
             console.error('Erro ao adicionar tipo de despesa:', error);
-            // Você pode despachar um erro se precisar
+            // VocÃª pode despachar um erro se precisar
         }
     };
 };
@@ -32,15 +36,16 @@ export const addTipoDespesa = (payload: ITipoDespesaProps) => {
 export const removeTipoDespesa = (id: number) => {
     return async (dispatch) => {
         try {
-            // Faz a requisição DELETE para remover o tipo de despesa
-            await axios.delete(`${config.BASE_URL}/${id}`);
+            // Faz a requisiÃ§Ã£o DELETE para remover o tipo de despesa
+            const response = await axios.delete(`${config.BASE_URL}/${id}`);
 
-            dispatch({
-                type: 'REMOVE_TIPO_DESPESA',
-                payload: id // Id do tipo de despesa removido
-            });
-
-            getTodosTiposDespesas();
+            if (response.status == 200) {
+                toast.success('Tipo de despesa excluÃ­do com sucesso!');
+                dispatch({
+                    type: 'REMOVE_TIPO_DESPESA',
+                    payload: id // Id do tipo de despesa removido
+                });
+            }
         } catch (error) {
             console.error('Erro ao remover tipo de despesa:', error);
         }
@@ -51,17 +56,21 @@ export const removeTipoDespesa = (id: number) => {
 export const editTipoDespesa = (id: number, payload: ITipoDespesaProps) => {
     return async (dispatch) => {
         try {
-            // Faz a requisição PUT para editar o tipo de despesa
+            // Faz a requisiÃ§Ã£o PUT para editar o tipo de despesa
             const response = await axios.put(`${config.BASE_URL}/${id}`, payload, {
                 headers: {
-                    'Content-Type': 'application/json', // Especifica o tipo de conteúdo                   
+                    'Content-Type': 'application/json', // Especifica o tipo de conteÃºdo                   
                 }
             });
 
-            dispatch({
-                type: 'EDIT_TIPO_DESPESA',
-                payload: payload
-            });
+            if (response.status == 200) {
+                toast.success('Tipo de despesa alterado com sucesso!');
+
+                dispatch({
+                    type: 'EDIT_TIPO_DESPESA',
+                    payload: payload
+                });
+            }
         } catch (error) {
             console.error('Erro ao editar tipo de despesa:', error);
         }
@@ -72,7 +81,7 @@ export const editTipoDespesa = (id: number, payload: ITipoDespesaProps) => {
 export const getTodosTiposDespesas = (filterModel: IFilterModelProps) => {
     return async (dispatch) => {
         try {
-            // Faz a requisição GET para obter o tipo de despesa
+            // Faz a requisiÃ§Ã£o GET para obter o tipo de despesa
             const response = await axios.get(`${config.BASE_URL}/all${toQueryString(filterModel)}`);
             dispatch({
                 type: 'GET_TIPO_DESPESA',
@@ -88,7 +97,7 @@ export const getTodosTiposDespesas = (filterModel: IFilterModelProps) => {
 export const getTipoDespesaById = (id: number) => {
     return async (dispatch) => {
         try {
-            // Faz a requisição GET para obter o tipo de despesa
+            // Faz a requisiÃ§Ã£o GET para obter o tipo de despesa
             const response = await axios.get(`${config.BASE_URL}/${id}`);
             dispatch({
                 type: 'GET_TIPO_DESPESA',
