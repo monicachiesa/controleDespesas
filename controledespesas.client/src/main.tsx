@@ -5,11 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import store from './store';
 import App from './App.tsx'
 import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
 
 createRoot(document.getElementById('root')!).render(
     <Provider store={store}>
         <StrictMode>
             <App />
+            <ToastContainer />
         </StrictMode>
     </Provider>
 )

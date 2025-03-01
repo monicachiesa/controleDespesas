@@ -11,6 +11,8 @@ builder.Services.AddScoped<ITipoDespesaService, TipoDespesaService>();
 // Configurar o Swagger (opcional para documentação)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+//obriga os endpoints a serem lowercase
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 // Adicionando a política CORS
 builder.Services.AddCors(options =>

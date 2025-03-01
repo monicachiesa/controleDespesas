@@ -1,6 +1,8 @@
 import axios from 'axios';
 import config from '../config/config';
 import { ITipoDespesaProps } from '../types/ITipoDespesaProps.t';
+import { toQueryString } from '../utils/Functions';
+import { IFilterModelProps } from '../types/IFilterModelProps.t';
 
 // Action para adicionar tipo de despesa
 export const addTipoDespesa = (payload: ITipoDespesaProps) => {
@@ -67,12 +69,11 @@ export const editTipoDespesa = (id: number, payload: ITipoDespesaProps) => {
 };
 
 // action para obter todos os tipos de despesas
-export const getTodosTiposDespesas = () => {
+export const getTodosTiposDespesas = (filterModel: IFilterModelProps) => {
     return async (dispatch) => {
         try {
             // Faz a requisição GET para obter o tipo de despesa
-            const response = await axios.get(`${config.BASE_URL}/all`);
-            console.log('response', response)
+            const response = await axios.get(`${config.BASE_URL}/all${toQueryString(filterModel)}`);
             dispatch({
                 type: 'GET_TIPO_DESPESA',
                 payload: response.data // Dados do tipo de despesa

@@ -1,4 +1,5 @@
 ﻿using ControleDespesas.Server.Models;
+using ControleDespesas.Server.Models.Filters;
 using ControleDespesas.Server.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,33 +18,16 @@ namespace ControleDespesas.Server.Controllers
 
         [HttpGet]
         [Route("All")]
-        public async Task<ActionResult<IEnumerable<TipoDespesa>>> GetTipoDespesas()
+        public async Task<ActionResult<IEnumerable<TipoDespesa>>> GetTipoDespesas([FromQuery] FilterModel filter)
         {
             try
             {
-                var tipoDespesas = await _tipoDespesaService.GetTipoDespesas();
+                var tipoDespesas = await _tipoDespesaService.GetTipoDespesas(filter);
                 return Ok(tipoDespesas);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, new { message = "Erro ao buscar tipos de despesas", error = ex.Message });
-            }
-        }
-
-        [HttpGet("TipoDespesaByNome")]
-        public async Task<ActionResult<IEnumerable<TipoDespesa>>> GetTipoDespesasByName([FromQuery] string nome)
-        {
-            try
-            {
-                var tipoDespesas = await _tipoDespesaService.GetTipoDespesasByNome(nome);
-                if (tipoDespesas == null || !tipoDespesas.Any())
-                    return NotFound(new { message = "Não existem tipos de despesas com este nome" });
-
-                return Ok(tipoDespesas);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Erro ao buscar tipos de despesas por nome", error = ex.Message });
             }
         }
 

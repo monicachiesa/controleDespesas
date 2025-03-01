@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { PencilSimple, TrashSimple } from '@phosphor-icons/react';
 import styled from "styled-components";
 import ConfirmationModal from "../../components/ConfirmationModal";
+import { useDebounce } from "../../utils/Functions";
 
 const ThStyled = styled.th`
   cursor: pointer;
@@ -18,6 +19,7 @@ const TipoDespesa = () => {
     const [idTipoDespesa, setIdTipoDespesa] = useState(0);
     const [modal, setModal] = useState(false);
     const [searchValue, setSearchValue] = useState('');
+    const debouncedValue = useDebounce(searchValue, 2000);
 
     const toggle = () => setModal(!modal);
 
@@ -29,8 +31,11 @@ const TipoDespesa = () => {
     const tipoDespesa = useSelector(state => state.tipoDespesa.tipoDespesa);
 
     useEffect(() => {
-        dispatch(getTodosTiposDespesas());
-    }, []);
+        if (debouncedValue) {
+            let filterModel = { SearchValue: debouncedValue };
+            dispatch(getTodosTiposDespesas(filterModel));
+        }
+    }, [debouncedValue, dispatch]);
 
     const goToDespesa = () => {
         navigate("/tipoDespesa");

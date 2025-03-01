@@ -135,3 +135,4 @@ C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Se
 C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\obj\Debug\net8.0\ControleDespesas.Server.pdb
 C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\obj\Debug\net8.0\ControleDespesas.Server.genruntimeconfig.cache
 C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\obj\Debug\net8.0\ref\ControleDespesas.Server.dll
+C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\obj\Debug\net8.0\ControleDespesas.Server.sourcelink.json

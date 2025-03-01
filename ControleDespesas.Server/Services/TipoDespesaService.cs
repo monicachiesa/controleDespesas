@@ -1,6 +1,9 @@
 ﻿using ControleDespesas.Models;
 using ControleDespesas.Models.Utils;
 using ControleDespesas.Server.Models;
+using ControleDespesas.Server.Models.Filters;
+using ControleDespesas.Server.Utils;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace ControleDespesas.Server.Services
@@ -52,21 +55,25 @@ namespace ControleDespesas.Server.Services
             return tipoDespesa;
         }
 
-        public async Task<IEnumerable<TipoDespesa>> GetTipoDespesas()
+        public async Task<IEnumerable<TipoDespesa>> GetTipoDespesas(FilterModel filter)
         {
-            return await _context.TiposDespesas.Where(d => d.Excluido != true).ToListAsync();
+            var query = _context.TiposDespesas
+                .Where(d => d.Excluido != true);
+
+            var result = await query.ToListAsync(); // Executa no banco e traz os resultados
+
+            if (!string.IsNullOrWhiteSpace(filter.SearchValue))
+            {
+                string valueNormalized = Functions.RemoveDiacritics(filter.SearchValue).ToLower();
+
+                result = result
+                    .Where(d => Functions.RemoveDiacritics(d.Nome).ToLower().Contains(valueNormalized) ||
+                                Functions.RemoveDiacritics(d.Descricao).ToLower().Contains(valueNormalized))
+                    .ToList();
+            }
+
+            return result;
         }
-
-        public async Task<IEnumerable<TipoDespesa>> GetTipoDespesasByNome(string nome)
-        {
-            if (string.IsNullOrWhiteSpace(nome))
-                return await GetTipoDespesas();
-
-            return await _context.TiposDespesas
-                                 .Where(n => n.Nome.Contains(nome))
-                                 .ToListAsync();
-        }
-
         public async Task UpdateTipoDespesa(TipoDespesa tipoDespesa)
         {
             if (tipoDespesa == null)
