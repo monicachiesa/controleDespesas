@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace ControleDespesas.Server.Models
+﻿namespace ControleDespesas.Server.Models
 {
     public class TipoDespesa
     {

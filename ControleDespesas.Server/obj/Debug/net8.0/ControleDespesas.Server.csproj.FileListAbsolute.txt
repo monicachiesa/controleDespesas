@@ -136,3 +136,9 @@ C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Se
 C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\obj\Debug\net8.0\ControleDespesas.Server.genruntimeconfig.cache
 C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\obj\Debug\net8.0\ref\ControleDespesas.Server.dll
 C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\obj\Debug\net8.0\ControleDespesas.Server.sourcelink.json
+C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\monic\OneDrive\Documentos\Projetos\ControleDespesas\ControleDespesas.Server\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

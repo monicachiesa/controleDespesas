@@ -1,11 +1,12 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import tipoDespesaReducer from './reducers/tipoDespesa.reducer';
 import { thunk } from 'redux-thunk';
-
+import authReducer from './reducers/auth.reducer';
 
 // Combina os reducers
 const rootReducer = combineReducers({
-    tipoDespesa: tipoDespesaReducer
+    tipoDespesa: tipoDespesaReducer,
+    auth: authReducer
 });
 
 // Cria a store com o middleware redux-thunk

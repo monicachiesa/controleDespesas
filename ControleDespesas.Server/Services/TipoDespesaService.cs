@@ -3,7 +3,6 @@ using ControleDespesas.Models.Utils;
 using ControleDespesas.Server.Models;
 using ControleDespesas.Server.Models.Filters;
 using ControleDespesas.Server.Utils;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace ControleDespesas.Server.Services

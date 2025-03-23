@@ -1,6 +1,5 @@
 ﻿using ControleDespesas.Server.Models;
 using ControleDespesas.Server.Models.Filters;
-using Microsoft.AspNetCore.Mvc;
 
 namespace ControleDespesas.Server.Services
 {

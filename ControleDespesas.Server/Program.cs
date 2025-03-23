@@ -1,12 +1,14 @@
 using ControleDespesas.Models;
 using ControleDespesas.Server.Services;
+using ControleDespesas.Server.Services.JWT;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Adicionar os serviços necessários
 builder.Services.AddControllers();
 builder.Services.AddScoped<Contexto>();
-builder.Services.AddScoped<ITipoDespesaService, TipoDespesaService>();
+builder.Services.AddScoped<TipoDespesaService, TipoDespesaService>();
+builder.Services.AddScoped<IJWTService, JwtService>();
 
 // Configurar o Swagger (opcional para documentação)
 builder.Services.AddEndpointsApiExplorer();

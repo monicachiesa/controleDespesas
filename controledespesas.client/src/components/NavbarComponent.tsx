@@ -1,5 +1,9 @@
 ﻿import { Nav, NavItem, NavLink } from "reactstrap";
 import styled from "styled-components";
+import { logOut } from "../actions/auth.actions";
+import { useDispatch } from "react-redux";
+import { useAuth } from "../contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const StyledNavLink = styled(NavLink)`
     color: inherit !important;
@@ -8,6 +12,7 @@ const StyledNavLink = styled(NavLink)`
     padding: 8px 16px;
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 
     &:hover {
         background-color: #f8f9fa;
@@ -15,17 +20,37 @@ const StyledNavLink = styled(NavLink)`
     }
 `;
 
+const StyledDiv = styled.div`
+display: flex;
+flex-direction: row
+`;
+
 function NavbarComponent() {
+    const { logout: authContextLogout } = useAuth();
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        dispatch(logOut());
+        authContextLogout();
+        navigate("/");
+    }
+
     return (
-        <Nav className="bg-light shadow-sm p-3 mb-4">
-            <NavItem className="ml-4">
-                <StyledNavLink href="/">Home</StyledNavLink>
-            </NavItem>
+        <Nav className="bg-light shadow-sm p-3 mb-4 d-flex justify-content-between">
+            <StyledDiv>
+                <NavItem>
+                    <StyledNavLink href="/">Home</StyledNavLink>
+                </NavItem>
+                <NavItem>
+                    <StyledNavLink href="/tiposDespesas">Tipos de Despesas</StyledNavLink>
+                </NavItem>
+                <NavItem>
+                    <StyledNavLink href="/despesas">Despesas</StyledNavLink>
+                </NavItem>
+            </StyledDiv>
             <NavItem>
-                <StyledNavLink href="/tiposDespesas">Tipos de Despesas</StyledNavLink>
-            </NavItem>
-            <NavItem>
-                <StyledNavLink href="/despesas">Despesas</StyledNavLink>
+                <StyledNavLink onClick={handleLogout}>Sair</StyledNavLink>
             </NavItem>
         </Nav>
     );

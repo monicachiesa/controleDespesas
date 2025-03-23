@@ -10,7 +10,7 @@ export const addTipoDespesa = (payload: ITipoDespesaProps) => {
     return async (dispatch) => {
         try {
             // Faz a requisição POST para adicionar o tipo de despesa
-            const response = await axios.post(`${config.BASE_URL}`, payload, {
+            const response = await axios.post(`${config.BASE_URL}tiposDespesas`, payload, {
                 headers: {
                     'Content-Type': 'application/json', // Especifica o tipo de conteúdo                   
                 }
@@ -37,7 +37,7 @@ export const removeTipoDespesa = (id: number) => {
     return async (dispatch) => {
         try {
             // Faz a requisição DELETE para remover o tipo de despesa
-            const response = await axios.delete(`${config.BASE_URL}/${id}`);
+            const response = await axios.delete(`${config.BASE_URL}tiposDespesas/${id}`);
 
             if (response.status == 200) {
                 toast.success('Tipo de despesa excluído com sucesso!');
@@ -57,7 +57,7 @@ export const editTipoDespesa = (id: number, payload: ITipoDespesaProps) => {
     return async (dispatch) => {
         try {
             // Faz a requisição PUT para editar o tipo de despesa
-            const response = await axios.put(`${config.BASE_URL}/${id}`, payload, {
+            const response = await axios.put(`${config.BASE_URL}tiposDespesas/${id}`, payload, {
                 headers: {
                     'Content-Type': 'application/json', // Especifica o tipo de conteúdo                   
                 }
@@ -82,7 +82,7 @@ export const getTodosTiposDespesas = (filterModel: IFilterModelProps) => {
     return async (dispatch) => {
         try {
             // Faz a requisição GET para obter o tipo de despesa
-            const response = await axios.get(`${config.BASE_URL}/all${toQueryString(filterModel)}`);
+            const response = await axios.get(`${config.BASE_URL}tiposDespesas/all${toQueryString(filterModel)}`);
             dispatch({
                 type: 'GET_TIPO_DESPESA',
                 payload: response.data // Dados do tipo de despesa
@@ -98,7 +98,7 @@ export const getTipoDespesaById = (id: number) => {
     return async (dispatch) => {
         try {
             // Faz a requisição GET para obter o tipo de despesa
-            const response = await axios.get(`${config.BASE_URL}/${id}`);
+            const response = await axios.get(`${config.BASE_URL}tiposDespesas/${id}`);
             dispatch({
                 type: 'GET_TIPO_DESPESA',
                 payload: response.data // Dados do tipo de despesa
